@@ -96,5 +96,50 @@ namespace Unit_35_Assignment_2_new
         {
 
         }
+
+        private void Button3_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                double radius = double.Parse(textBox8.Text);
+                double surfacearea = (4 * Math.PI * radius * radius);
+                label5.Text = " surface area is " + surfacearea;
+            }
+            catch
+            {
+                MessageBox.Show("EPIC SPHERE SAYS NO TRY AGAIN YOU IDIOT");
+            }
+        }
+
+        private void Button4_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                double radius = double.Parse(textBox7.Text);
+                double volume = (4.0 / 3.0 * Math.PI * radius * radius * radius);
+                label6.Text = "voulme is " + volume;
+
+            }
+            catch
+            {
+                MessageBox.Show("EPIC SHERE SAYS NANI NOW TRY AGAIN");
+
+            }
+        }
+
+        private void TextBox7_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Label6_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Button5_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

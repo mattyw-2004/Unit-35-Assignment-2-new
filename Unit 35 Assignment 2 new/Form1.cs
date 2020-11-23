@@ -62,5 +62,39 @@ namespace Unit_35_Assignment_2_new
         {
 
         }
+
+        private void Button2_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                double height = double.Parse(textBox4.Text);
+                double length = double.Parse(textBox6.Text);
+                double width = double.Parse(textBox5.Text);
+                double surfacearea = (2 * length * height * 2 * length * width * 2 * width * height);
+                label2.Text = "surface area is " + surfacearea;
+
+            }
+            catch
+            {
+                MessageBox.Show("EPIC CUBOID SAYS NO TRY AGAIN YOU MUPPET");
+            }
+         
+
+        }
+
+        private void Label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void TabPage2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void PictureBox2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
